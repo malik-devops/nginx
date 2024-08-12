@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY ./html /usr/share/nginx/html
 
 # (Optional) Copy a custom NGINX configuration file
-# COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
 
 # Expose the port NGINX will serve on
 EXPOSE 80
